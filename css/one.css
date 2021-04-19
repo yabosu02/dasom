@@ -1,0 +1,151 @@
+@charset"UTF-8"
+
+*{ margin: 0; padding: 0; }
+li { list-style: none; display: inline; text-align: center; }
+a { text-decoration: none; }
+img { vertical-align: middle; text-align: center; border: 0; }
+fliedset { border: 0; }
+em, address { font-style:normal; }
+
+body { font: 20px 'LG Smart UI'; font-weight: Regular; color: #5c118c; background-color: #ffffff; }
+	a {color: #5c118c; text-decoration: none; }
+
+
+
+
+
+#wrapper { width: 1200px; margin:0 auto; }
+
+
+/* 머리 */
+
+#header { height: 400px; }
+
+h5 { margin-left: 440px; padding-top: 10px;}
+h5 img { width: 320px; height: 200px; position: relative; cursor: pointer; }
+
+
+/*상단메뉴 */
+
+.rightUpMenu { display: inline; }
+.rightUpMenu ul { float: right; }
+.rightUpMenu ul li { float: left; padding-right: 10px; cursor:pointer;}
+	.rightUpMenu ul li img { width: 30px; height: 30px; }
+
+
+/* 메뉴 */
+
+#gNav { width: 1200px; height: 80px; margin-top: 50px; }
+	#gNav ul { text-align: center; line-height: 80px; }
+		#gNav ul li { width: 170px; height: 80px; float: left; } 
+		
+.down { display: none;/**/ width: 170px; position: absolute; background: #5c118c;
+			opacity: 1; z-index: 999; }
+	#gNav li:hover { background: #ffb700; opacity: 1; }
+	#gNav li:hover a { color: #ffffff; opacity: 1; }
+
+.drop:hover .down { display: block; }
+	.down a { display: inline-block; width: 170px; /**/}
+	.down a:hover { background: #ffb700; color: #ffffff;}
+
+
+/* 메인베너 (슬라이더)*/
+
+#content01 { position: relative; width: 1200px; height: 600px;  margin-top: 50px; }
+.slide01{ overflow: hidden; /**/ position: absolute; width: 1100px; height: 545px; margin-left: 50px; }
+.slide01 li{ position: absolute;  }
+.slide01 li img{ width: 1100px; height:545px; }
+
+/*프로그램*/
+
+#content02 { width:1200px; margin-top:5px; margin-bottom: 30px; display: inline-block; }
+
+#content02{}
+#content02 ul { margin: 30px 30px 30px 30px; }
+#content02 li:nth-of-type(2){ margin: 0 155px 0 155px; }
+#content02 li:nth-of-type(5){ margin: 0 155px 0 155px; }
+
+
+/*후기*/
+
+#comment { position: relative; width: 1200px; height: 400px; }
+.left { margin-top: 30px; float: left; }
+	.left img { width: 580px; height: 340px;}
+	.left img onmouseover { width: 600px; height: 360px;}
+.right { margin-top: 30px; float: right; }
+	.right img { width: 580px; height: 340px;}
+	.right img onmouseover { width: 600px; height: 360px;}
+
+/* 의료진*/
+
+#content03 { width : 1200px; height: 800px; margin-top: 200px;  text-align:center; }
+.bar{ display: inline-block; margin-top: 50px; padding:5px; font-size: 50px; font: 'LG Smart UI'; 
+		background: #ffb700; font-weight: Bold; color:#5c118c; text-shadow:3px 3px 3px #fff }
+
+#content03 img { margin-top: 50px; }
+
+
+
+/*의료기기*/
+
+#content04 { width : 1200px; height: 1700px; margin-top: 50px;  text-align:center; }
+#content04  img { margin-bottom: 30px; }
+#content04 .space {  display: inline-block; margin-top: 30px; line-height: 80px; padding:5px; font-size: 50px; font: 'LG Smart UI'; 
+		background: #ffb700; font-weight: Bold; color:#5c118c; text-shadow:3px 3px 3px #fff  }
+
+#content04{}
+#content04 ul { margin-top: 80px; }
+#content04 li:nth-of-type(2){ margin: 0 50px 0 50px; }
+#content04 li:nth-of-type(5){ margin: 0 50px 0 50px; }
+
+/*지점안내*/
+
+#Location { display: inline-block; width : 1200px; height: 600px; margin-top: 50px;  }
+
+#Location{}
+#Location ul { margin: 30px 30px 30px 30px; }
+
+#Location li:nth-of-type(2){ margin: 0 155px 0 155px; }
+#Location li:nth-of-type(4){ margin: 30px 0px 0 0; }
+#Location li:nth-of-type(5){ margin: 30px 155px 0 155px; }
+#Location li:nth-of-type(6){ margin: 30px 0 0 0; }
+
+
+
+/*팝업*/ 
+
+#popUp{ position: absolute; top: 100px; left: 350px;  z-index: 9999999; box-shadow: 2px 2px 2px #fff; background:#ffffff; }
+#popUp img{ width: 400px; height:550px; }
+	.close { width:100px; height:50px; margin-top: -40px; margin-left: 180px;  padding:0 ; background: #ffffff;  }
+	.close a { background: #ffffff;  color: #5c118c; }
+#popUp .close:hover a { color:#FFB700; font-weight:bold; }
+
+
+/* footer */
+
+footer { width: 1200px; margin:0 auto; height: 100px; background: #5c118c; position: relative; font: 'LG Smart UI'; font-size: 15px; font-weight: Light; }
+
+#siteMap {}
+#siteMap ul{ margin-left: 100px; padding-top: 20px; color: rgb(255,255,255); cursor:pointer; }
+
+#siteMap ul li { display: inline; padding: 10px 0px 0px 150px; }
+
+#siteMap img{ width: 120px; height: 80px;  float: left; padding-left: 10px; padding-top: 10px; }
+        
+#information { margin-left: 150px; width: 1000px; padding-top: 20px; padding-left: 60px; color: ghostwhite; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
