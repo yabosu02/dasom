@@ -213,6 +213,17 @@
 					<li>대표자 : 이다솜 개인정보책임자 : 이다솜</li>
 				</ul>
 			</div>
+			<div id="map" style="width:500px;height:400px;"></div>
+			<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=cfbdb7b05e492bac4b00f9a6ed061ede"></script>
+			<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 	</footer> <!--f끝-->
 
 </html>
